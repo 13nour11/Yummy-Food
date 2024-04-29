@@ -1,0 +1,64 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+/* start left-side-menu */
+
+.left-side-menu ul.nav-links li, 
+.all .inner,
+.row .col-md-3 .inner,
+i{
+    cursor: pointer;
+}
+/* .left-side-menu {
+    left: -100%; 
+} */
+.left-side-menu{
+    z-index: 99;
+}
+
+.left-menu-icons img{
+    width: 30px;
+}
+/* end left-side-menu */
+/* start meals */
+
+.all .desc{
+    transform: translateY(100%);
+    transition: transform 400ms ease; 
+}
+.all .inner:hover .desc{
+    transform: translateY(0);
+}
+/* end meals */
+
+/* start search */
+.search input.form-control,
+.search input.form-control:focus{
+    background-color: transparent;
+}
+/* end search */
+
+/* start loading-screen */
+.loading-screen{
+    display: flex;
+    z-index: 9999;
+}
+.inner-loading-screen{
+    z-index: 9;
+    position: absolute;
+    display: flex;
+}
+/* end loading-screen */
+
+/* CSS for inputs */
+.input-visible {
+    visibility: visible !important;
+}
+
+.input-hidden {
+    visibility: hidden !important;
+}
