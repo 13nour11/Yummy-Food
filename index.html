@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap5 style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="m-0 ">
+
+    <!-- start loading-screen (spinner) -->
+    <div class="loading-screen text-white position-fixed top-0 bottom-0 start-0 end-0 bg-black justify-content-center align-items-center">
+        <i class="fas fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- end loading-screen (spinner) -->
+
+    <!-- start left-side-menu -->
+    <section class="left-side-menu position-fixed top-0  vh-100  d-flex "> <!--remove 'start-0' to make the white navLeftIcons will be animated correctly-->
+        <div class="menu d-flex flex-column justify-content-between p-4 bg-black text-white vh-100"><!--position-relative-->
+            <div class="link">
+                <ul class="nav-links list-unstyled overflow-hidden">
+                    <li class="mb-3 position-relative" id="search">Search</li>
+                    <li class="mb-3 position-relative" id="cat">Categories</li>
+                    <li class="mb-3 position-relative" id="area">Area</li>
+                    <li class="mb-3 position-relative" id="ingred">Ingredients</li>
+                    <li class="mb-3 position-relative" id="contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="icons w-25">
+                    <i class="fa-brands fa-facebook me-1"></i>
+                    <i class="fa-brands fa-twitter me-1"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="w-75 pe-0 me-0">Copyright Â&copy; 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div class="left-menu-icons d-flex flex-column py-4 px-3 justify-content-between bg-white text-center">
+            <img src="img/logo.png" alt="" class=" d-block ">
+            <!-- <i class="fa-solid fa-bars fa-2x menu-icon open"></i> -->
+            <i class="fa-solid open fa-align-justify fa-2x menu-icon"></i>
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+    <!-- end left-side-menu -->
+
+    <!-- start search -->
+    <section class="search bg-black" >
+        <div class="container w-75 " id="searchContainer">
+    
+        </div>
+    </section>
+    <!-- end search -->
+
+    <!-- start all recipes -->
+    <section class="all bg-black py-5 position-relaive min-vh-100" > <!-- vh-100-->
+        <!-- remove vh-100 -->
+        <!-- Loading spinner -->
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center bg-black text-white">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        
+        <div class="container">
+            <div class="row g-4" id="rowData">
+                <!-- here use vh-100 to make the items at the center-->
+
+            </div>
+        </div>
+        
+    </section>
+    <!-- end all recipes -->
+
+    
+    <!-- bootstrap5 js script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery script -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- js script -->
+    <script src="js/index.js"></script>
+</body>
+</html>
